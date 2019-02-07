@@ -9,3 +9,8 @@ export const fetchPosts = sync () => {
     payload: response
   }
 }
+
+//this looks correct
+//have an action creator that makes a request and return an action object with data on payload property
+//BUT THIS IS NOT CORRECT CODE, THIS IS BAD APPROACH
+//Breaking Redux rules, of action creator
