@@ -31,3 +31,6 @@
   - Get fetched data into a component by generating new State in Redux Store
   - Then get that into the component though `mapStateToProps`
   - `mapStateToProps` is always responsible for getting data from Store and down to the component
+
+- [] Wire up the `connect()` to PostList
+- [] Action Creator to call the external API and get data
