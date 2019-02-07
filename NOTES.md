@@ -20,11 +20,14 @@
 
 - Steps 1-3
   - Components are generally responsible for fetching data they need by calling an action creator
+  - Common place to initiate data fetch is in a `componentDidMount` lifecycle
 
 - Steps 4-6
   - Action creators are responsible for making API requests
   - This is where `redux-thunk` comes into play
+  - Common for action creator to initiate the data fetching process
 
--Steps 7-8
+- Steps 7-8
   - Get fetched data into a component by generating new State in Redux Store
   - Then get that into the component though `mapStateToProps`
+  - `mapStateToProps` is always responsible for getting data from Store and down to the component
