@@ -7,6 +7,7 @@
 
 ## COMPONENTS BUILD
 - [x] Build PostList and attach it to App
+- [] Build UserHeader component
 
 ## General Data Loading with Redux
   1. Components rendered onto screen
@@ -33,6 +34,6 @@
   - `mapStateToProps` is always responsible for getting data from Store and down to the component
 
 - [x] Wire up the `connect()` to PostList
-- [] build `componentDidMount` method
+- [x] build `componentDidMount` method
 - [] Action Creator to call the external API and get data
 - [] Wire up request to external API inside action creator
