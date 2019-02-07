@@ -18,7 +18,7 @@
   7. A Reducer sees the Action, returns data off the `payload`
   8. Because new State object it generated, redux/react-redux causes App to re-render
 
-- Steps 1-3
+- [x] Steps 1-3
   - Components are generally responsible for fetching data they need by calling an action creator
   - Common place to initiate data fetch is in a `componentDidMount` lifecycle
 
@@ -32,5 +32,7 @@
   - Then get that into the component though `mapStateToProps`
   - `mapStateToProps` is always responsible for getting data from Store and down to the component
 
-- [] Wire up the `connect()` to PostList
+- [x] Wire up the `connect()` to PostList
+- [] build `componentDidMount` method
 - [] Action Creator to call the external API and get data
+- [] Wire up request to external API inside action creator
