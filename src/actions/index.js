@@ -1,13 +1,14 @@
 //Action Creator
 import jsonPlaceholder from '../apis/jsonPlaceholder';
 
-export const fetchPosts = sync () => {
-  const response = await jsonPlaceholder.get('/posts')
+export const fetchPosts = async () => {
+  const response = await jsonPlaceholder.get('/posts');
 
+  //after this transpiles to ES2015, it is not returning a JS object
   return {
     type: 'FETCH_POSTS',
     payload: response
-  }
+  };
 }
 
 //this looks correct
