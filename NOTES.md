@@ -35,5 +35,6 @@
 
 - [x] Wire up the `connect()` to PostList
 - [x] build `componentDidMount` method
+- [] Set up Axios
 - [] Action Creator to call the external API and get data
 - [] Wire up request to external API inside action creator
