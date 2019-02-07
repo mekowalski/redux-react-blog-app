@@ -1,13 +1,12 @@
 //Action Creator
 import jsonPlaceholder from '../apis/jsonPlaceholder';
 
-export const fetchPosts = async () => {
-  const response = await jsonPlaceholder.get('/posts');
+export const fetchPosts = () => {
+  const promise = jsonPlaceholder.get('/posts');
 
-  //after this transpiles to ES2015, it is not returning a JS object
   return {
     type: 'FETCH_POSTS',
-    payload: response
+    payload: promise
   };
 }
 
@@ -15,3 +14,6 @@ export const fetchPosts = async () => {
 //have an action creator that makes a request and return an action object with data on payload property
 //BUT THIS IS NOT CORRECT CODE, THIS IS BAD APPROACH
 //Breaking Redux rules, of action creator
+//ACTIONS MUST BE PLAIN OBJECTS
+
+//promise version is also not great
