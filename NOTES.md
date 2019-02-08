@@ -40,4 +40,5 @@
 - (this did not work well)
 ------------------------------
 - [] Wire up request to external API inside action creator
-- [] Set up Middleware redux-thunk
+- [] Set up Middleware redux-thunk(wire up to Redux Store)
+- [] Refactor `fetchPosts()` to truly make use of redux-thunk

@@ -5,10 +5,21 @@ export const fetchPosts = () => {
   return function(dispatch, getState) {
     const promise = jsonPlaceholder.get('/posts');
 
+    //currently returning an object that is supposed to be an action
+    //when using redux-thunk, no need to return an action from inner function
+    //only return a function, that's it
     return {
       type: 'FETCH_POSTS',
       payload: promise
     }
+  }
+}
+
+//can still have normal action creators, NO PROBLEM
+//can still make action creators that return action objects
+export const selectPost = () = {
+  return {
+    type: 'SELECT_POST'
   }
 }
 
