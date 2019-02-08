@@ -23,7 +23,7 @@
   - Components are generally responsible for fetching data they need by calling an action creator
   - Common place to initiate data fetch is in a `componentDidMount` lifecycle
 
-- Steps 4-6
+- [x] Steps 4-6
   - Action creators are responsible for making API requests
   - This is where `redux-thunk` comes into play
   - Common for action creator to initiate the data fetching process
@@ -42,3 +42,5 @@
 - [x] Wire up request to external API inside action creator
 - [x] Set up Middleware redux-thunk(wire up to Redux Store)
 - [x] Refactor `fetchPosts()` to truly make use of redux-thunk
+------------------------------
+- [] Define a Reducer that will see that dispatch Action and get Data from API payload property
