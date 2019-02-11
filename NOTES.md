@@ -47,3 +47,4 @@
   - Create separate file for each reducer within the reducers DIR
   - Import the separate reducers
   - Wire them up to `combineReducers` call
+  - 
