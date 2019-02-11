@@ -44,3 +44,6 @@
 - [x] Refactor `fetchPosts()` to truly make use of redux-thunk
 ------------------------------
 - [] Define a Reducer that will see that dispatch Action and get Data from API payload property
+  - Create separate file for each reducer within the reducers DIR
+  - Import the separate reducers
+  - Wire them up to `combineReducers` call
