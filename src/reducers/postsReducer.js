@@ -1,8 +1,8 @@
-export default () => {
-  return 369
+export default (state = [], action) => {
+  if (action.type === 'FETCH_POSTS') {
+    return action.payload
+  }
 }
 
-//L2: Rule1-Must return ANY value other than 'undefined'/Should always have a return statement with value
-//Rule2-Provide state/data using only previous state value that was returned and action
-//Rule3-Must not react our of its own function to decide what value to return(pure reducers)
-//Rule4-Must not mutate input state argument
+//postsReducer handles list of posts therefore default state to an empty array
+//reducer will inspect action type, then return the payload

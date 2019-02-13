@@ -47,4 +47,6 @@
   - Create separate file for each reducer within the reducers DIR
   - Import the separate reducers
   - Wire them up to `combineReducers` call
-  - 
+
+- `postsReducer` is responsible for maintaining a list of posts from external API
+- Inspect the Action type
