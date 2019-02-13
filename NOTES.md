@@ -50,3 +50,4 @@
 
 - `postsReducer` is responsible for maintaining a list of posts from external API
 - Inspect the Action type
+- Handle case for not finding appropriate action type
