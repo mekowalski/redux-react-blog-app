@@ -48,7 +48,12 @@
   - Import the separate reducers
   - Wire them up to `combineReducers` call
 
-- [] Implement `postsReducer`
+- [x] Implement `postsReducer`
 - `postsReducer` is responsible for maintaining a list of posts from external API
 - Inspect the Action type
 - Handle case for not finding appropriate action type
+
+- After getting back an Action with payload property, showing up inside Reducer
+- Reducer should return the list of posts
+- Redux State object should then contain the list of blog posts from the API
+- As soon as that happens, the entire React application should be re-rendered
