@@ -57,3 +57,5 @@
 - Reducer should return the list of posts
 - Redux State object should then contain the list of blog posts from the API
 - As soon as that happens, the entire React application should be re-rendered
+- [] get list of posts inside the `PostList` component
+- (anytime data needs to be retrieved from Redux side, into the React side, always define and use `mapStateToProps()` and pass it down to `connect()`)

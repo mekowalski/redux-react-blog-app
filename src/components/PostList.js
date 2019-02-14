@@ -16,4 +16,10 @@ class PostList extends React.Component {
   }
 }
 
+//define mapStateToProps
+//state will have property of posts and that property will hold all data retruned from Reducer
+const mapStateToProps = state => {
+
+}
+
 export default connect(null, { fetchPosts })(PostList)
