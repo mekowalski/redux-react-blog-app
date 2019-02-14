@@ -8,6 +8,3 @@ export const fetchPosts = () => {
     dispatch({ type: 'FETCH_POSTS', payload: response.data })
   }
 }
-
-//L8: entire response is dispacthed when only the data tab should be dispatched
-//modify dispatch for payload: response.data
