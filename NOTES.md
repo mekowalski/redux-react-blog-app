@@ -3,7 +3,7 @@
 - REDUX: The actual library itself
 - REACT-REDUX: Integration layer between React and Redux
 - AXIOS: Helps make network requests with external APIs(not technically required, can use fetch and .then)
-- REDUX-THUNK: Middleware to help make requests in a Redux application
+- REDUX-THUNK: Middleware to help make requests in a Redux app, make request FROM Redux side of app
 
 ## COMPONENTS BUILD
 - [x] Build PostList and attach it to App
