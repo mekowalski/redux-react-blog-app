@@ -28,7 +28,7 @@
   - This is where `redux-thunk` comes into play
   - Common for action creator to initiate the data fetching process
 
-- Steps 7-8
+- [x] Steps 7-8
   - Get fetched data into a component by generating new State in Redux Store
   - Then get that into the component though `mapStateToProps`
   - `mapStateToProps` is always responsible for getting data from Store and down to the component
@@ -62,3 +62,5 @@
 
 - [] add a bit more logic to `PostList` component
 - [] render list of posts onto the screen
+
+- (can't believe i never finished this)
