@@ -15,6 +15,3 @@ ReactDOM.render(
   </Provider>,
   document.querySelector('#root')
 );
-
-//applyMiddleware is how middleware is connected to Redux Store
-//applyMiddleware(thunk) is how to actually hookup redux thunk
