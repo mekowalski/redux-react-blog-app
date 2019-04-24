@@ -64,3 +64,8 @@
 - [] render list of posts onto the screen
 
 - (can't believe i never finished this)
+
+
+### Redux Middleware
+- [] Wire up Redux-Thunk (it's already installed as a dependency but to make use of it, need to wire up to Redux Store)
+- Import root `index.js`
