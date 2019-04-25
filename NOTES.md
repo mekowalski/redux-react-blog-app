@@ -67,6 +67,9 @@
 
 
 ### Redux Middleware
-- [] Wire up Redux-Thunk (it's already installed as a dependency but to make use of it, need to wire up to Redux Store)
+- [x] Wire up Redux-Thunk (it's already installed as a dependency but to make use of it, need to wire up to Redux Store)
 - Import root `index.js`
 - (oops i already had this step done)
+
+- Focus on Reducers(review)
+- Action Creator(fetchPosts) ---> Action(type: 'FETCH_POSTS' payload: response) ---> Store(Reducers(postsReducer))
