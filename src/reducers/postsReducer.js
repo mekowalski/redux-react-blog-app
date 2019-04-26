@@ -6,7 +6,3 @@ export default (state = [], action) => {
       return state
   }
 }
-
-//return statement should always return a value
-//anything other than 'undefined'
-//reducer can never ever return 'undefined'
