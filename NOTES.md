@@ -72,5 +72,9 @@
 
 
 - LIST BUILDING
-- [] add a bit more logic to `PostList` component
-- [] render list of posts onto the screen `renderList` will have logic to render list of posts
+- [x] add a bit more logic to `PostList` component
+- [x] render list of posts onto the screen `renderList` will have logic to render list of posts
+- Currently having issue with `key` being duplicated with some children, not certain what i did wrong to fix this
+
+- UserHeader Component
+- [] show username at bottom of each post
