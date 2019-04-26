@@ -60,11 +60,7 @@
 - [x] get list of posts inside the `PostList` component
 - (anytime data needs to be retrieved from Redux side, into the React side, always define and use `mapStateToProps()` and pass it down to `connect()`)
 
-- [] add a bit more logic to `PostList` component
-- [] render list of posts onto the screen
-
 - (can't believe i never finished this)
-
 
 ### Redux Middleware
 - [x] Wire up Redux-Thunk (it's already installed as a dependency but to make use of it, need to wire up to Redux Store)
@@ -73,3 +69,8 @@
 
 - Focus on Reducers(review)
 - Action Creator(fetchPosts) ---> Action(type: 'FETCH_POSTS' payload: response) ---> Store(Reducers(postsReducer))
+
+
+- LIST BUILDING
+- [] add a bit more logic to `PostList` component
+- [] render list of posts onto the screen `renderList` will have logic to render list of posts
