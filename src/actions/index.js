@@ -8,5 +8,3 @@ export const fetchPosts = () => {
     dispatch({ type: 'FETCH_POSTS', payload: response.data })
   }
 }
-
-//this syntax is commonly seen in many Redux projects
