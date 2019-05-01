@@ -114,4 +114,4 @@
 
 - [x] Action Creator: `fetchUser`, single
 - [x] Action: type: `FETCH_USER` payload: `response.data`
-- [] Store-Reducers: `usersReducer` to hold all users fetched
+- [x] Store-Reducers: `usersReducer` to hold all users fetched

@@ -16,4 +16,10 @@ class UserHeader extends React.Component {
   }
 }
 
+//this component needs access to Redux-level state
+//look at state.user and find a specific user
+const mapStateToProps = state => {
+  return { users: state.users }
+}
+
 export default connect(null, { fetchUser })(UserHeader)
