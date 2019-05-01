@@ -3,6 +3,11 @@ import { connect } from 'react-redux';
 import { fetchUser } from '../actions';
 
 class UserHeader extends React.Component {
+  //whenever this component appears on screen, make sure to give the atempted-fetched user, to show
+  componentDidMount() {
+    this.props.fetchUser(this.props.userId)
+  }
+
   render() {
     return (
       <div>
@@ -14,4 +19,5 @@ class UserHeader extends React.Component {
     )
   }
 }
-export default UserHeader
+
+export default connect(null, { fetchUser })(UserHeader)
