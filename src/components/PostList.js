@@ -10,7 +10,7 @@ class PostList extends React.Component {
   renderList() {
     return this.props.posts.map(post => {
       return (
-        <div className='item' key={post.title}>
+        <div className='item' key={post.id}>
           <i className='large middle alighend icon user' />
           <div className='content'>
             <div className='description'>
