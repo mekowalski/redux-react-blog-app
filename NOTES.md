@@ -83,7 +83,7 @@
   - make sure this component will call an Action Creator to fetch user to show on the screen
   - display `UserHeader` within `PostList`
 
-- Make sure the data loaded is correct to show usr header
+- Make sure the data loaded is correct to show user header
 - API structure: `/posts` shows 100 different posts which includes body, title, id and userId
 - The `userId` only has the numerical value
 - Need to figure out how to make an additional API request for `/users` endpoint
