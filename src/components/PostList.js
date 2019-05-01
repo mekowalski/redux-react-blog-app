@@ -14,16 +14,16 @@ class PostList extends React.Component {
         <div className='item' key={post.id}>
           <i className='large middle alighend icon user' />
           <div className='content'>
+
             <div className='description'>
               <h2>{post.title}</h2>
               <p>{post.body}</p>
             </div>
 
-            <UserHeader userId={post.userId} />
-            {
-              //pass in prop of userId to show that specific user
-              //vale will be post.userId because each post has a userId property
-            }
+            <div>
+              <UserHeader userId={post.userId} />
+            </div>
+            
           </div>
         </div>
       )
