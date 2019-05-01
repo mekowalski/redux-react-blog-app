@@ -76,7 +76,8 @@
 - [x] render list of posts onto the screen `renderList` will have logic to render list of posts
 - Currently having issue with `key` being duplicated with some children, not certain what i did wrong to fix this
 
-- UserHeader Component
+
+## USERHEADER COMPONENT
 - [] show username at bottom of each post
 
 - Make sure the data loaded is correct to show usr header
@@ -84,3 +85,15 @@
 - The `userId` only has the numerical value
 - Need to figure out how to make an additional API request for `/users` endpoint
   - This includes id, name, username, email, address and a few more user attributes
+- Need to request users through different API routes
+
+- FLOW TO REQUEST USER
+                        Fetch Posts
+                             |
+                  Show posts in PostList
+          Each element in PostList shows UserHeader
+           UserHeader is given ID of user to show
+         Each UserHeader attempts to fetch its user
+            Fetch User   Fetch User  Fetch User
+                |             |           |
+                Show user in each UserHeader
