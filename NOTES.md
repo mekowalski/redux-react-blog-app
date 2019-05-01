@@ -107,4 +107,8 @@
   - get each user
   - return it to application
   - somehow process through a Reducer
-  
+  - somehow get each relevant user into each instance of `UserHeader` component
+
+- [] Action Creator: `fetchUser`, single
+- [] Action: type: `FETCH_USER` payload: `response.data`
+- [] Store-Reducers: `usersReducer` to hold all users fetched
