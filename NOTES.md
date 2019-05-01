@@ -78,7 +78,7 @@
 
 
 ## USERHEADER COMPONENT
-- [] show username at bottom of each post
+- [x] show username at bottom of each post
   - just display author's name
   - make sure this component will call an Action Creator to fetch user to show on the screen
   - display `UserHeader` within `PostList`
