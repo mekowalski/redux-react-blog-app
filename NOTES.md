@@ -79,6 +79,7 @@
 
 ## USERHEADER COMPONENT
 - [] show username at bottom of each post
+  - just display author's name
 
 - Make sure the data loaded is correct to show usr header
 - API structure: `/posts` shows 100 different posts which includes body, title, id and userId
@@ -109,6 +110,6 @@
   - somehow process through a Reducer
   - somehow get each relevant user into each instance of `UserHeader` component
 
-- [] Action Creator: `fetchUser`, single
+- [x] Action Creator: `fetchUser`, single
 - [] Action: type: `FETCH_USER` payload: `response.data`
 - [] Store-Reducers: `usersReducer` to hold all users fetched

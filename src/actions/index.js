@@ -1,4 +1,5 @@
 //Action Creator
+//this returns an array of items
 import jsonPlaceholder from '../apis/jsonPlaceholder';
 
 export const fetchPosts = () => {
@@ -10,7 +11,7 @@ export const fetchPosts = () => {
 }
 
 //action creator to fetch user
-
+//this returns a single object
 export const fetchUser = id => {
   return async dispatch => {
     const response = await jsonPlaceholder.get(`/users/${id}`)
