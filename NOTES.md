@@ -97,3 +97,14 @@
             Fetch User   Fetch User  Fetch User
                 |             |           |
                 Show user in each UserHeader
+
+1. Application begins with fetching list of posts
+2. Eventually show list of posts to user inside `PostList` component
+3. Inside `renderList()` create separate instance of `UserHeader` component for every individual post
+4. Inside `UserHeader` add a new call to Action Creator to attempt fetching just the individual user
+  - A bunch of separate requests for each user
+5. Make 10 separate requests(in theory from API allowances)
+  - get each user
+  - return it to application
+  - somehow process through a Reducer
+  
