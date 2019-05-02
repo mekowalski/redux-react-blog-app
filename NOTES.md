@@ -147,6 +147,8 @@
 - Ideally should only fetch the user 1 time
 
 
-- [] Install Lodash Library
+- [x] Install Lodash Library
   - make use of `memoize` function on one of the Action Creators
   - import lodash, memoize `fetchUser`
+1. try memoize of `fetchUser` action creator, outer function
+2. try memoize of `fetchUser` action creator, inner function
