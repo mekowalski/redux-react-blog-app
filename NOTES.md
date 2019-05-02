@@ -138,9 +138,14 @@
   - `ownProps` is reference to props that are about to be sent to the component
 
 
--CURRENT ISSUE
+- CURRENT ISSUE
 - Currently making a request for a single user 10 times in a row, same for all users
 - Making 100 separate requests to fetch just 10 users
 - Showing 1 instance of UserHeader for every single blog post fetched
 - Whenever UserHeader is rendered on screen, `componentDidMount` is called, calling `fetchUser` with a particular id
 - Essentially Action Creator is called 100 different times even though repetitive data is being fetched
+- Ideally should only fetch the user 1 time
+
+
+- [] Install Lodash Library
+  - make use of `memoize` function on one of the Action Creators
