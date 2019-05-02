@@ -134,3 +134,5 @@
 - `mapStateToProps` and `connect` functions may be reused for other multiple components in app
 
 - [] Refactor `.find` statement from `render()` to `mapStateToProps`
+  - In order to access a prop(s) within a component from `mapStateToProps` call a 2nd argument of `ownProps`
+  - `ownProps` is reference to props that are about to be sent to the component
