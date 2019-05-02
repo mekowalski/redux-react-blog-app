@@ -115,3 +115,11 @@
 - [x] Action Creator: `fetchUser`, single
 - [x] Action: type: `FETCH_USER` payload: `response.data`
 - [x] Store-Reducers: `usersReducer` to hold all users fetched
+
+- Purpose of the `UserHeader` is to show one single user on the screen
+- Currently it's given much more data than it needs, the entire list of users
+- Need to somehow only pass it the user it cares about(id, username but not the big array of users)
+1. can either get entire user list from within `PostList` and pass in only the user needed to `UserHeader`
+2. `mapStateToProps` does some pre-calculations on values that come into the component as props and the Redux state
+  - instead of passing in a ton of data to component, and relying on component to find the user needed,
+    should extract all that logic to `mapStateToProps` function
