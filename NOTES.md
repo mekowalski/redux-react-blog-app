@@ -116,6 +116,7 @@
 - [x] Action: type: `FETCH_USER` payload: `response.data`
 - [x] Store-Reducers: `usersReducer` to hold all users fetched
 
+#### Refactor UserHeader Component
 - Purpose of the `UserHeader` is to show one single user on the screen
 - Currently it's given much more data than it needs, the entire list of users
 - Need to somehow only pass it the user it cares about(id, username but not the big array of users)
@@ -130,4 +131,6 @@
 - A different file will have the component alone
 - Advantage of a component used on its own without having to reach into Redux Store-Reducers
 - If necessary, can create a version of that component that will reach into Redux Store for data
-- `mapStateToProps` and `connect` functions may be resused for other multiple components in app
+- `mapStateToProps` and `connect` functions may be reused for other multiple components in app
+
+- [] Refactor `.find` statement from `render()` to `mapStateToProps`
