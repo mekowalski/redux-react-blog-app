@@ -123,3 +123,11 @@
 2. `mapStateToProps` does some pre-calculations on values that come into the component as props and the Redux state
   - instead of passing in a ton of data to component, and relying on component to find the user needed,
     should extract all that logic to `mapStateToProps` function
+
+- HOW THIS IS CONTRIBUTES TO REUSABILITY
+- In some applications, some engineers define `mapStateToProps` and `connect` functions inside of a separate file
+- One file may have `mapStateToProps` and initial connect set up
+- A different file will have the component alone
+- Advantage of a component used on its own without having to reach into Redux Store-Reducers
+- If necessary, can create a version of that component that will reach into Redux Store for data
+- `mapStateToProps` and `connect` functions may be resused for other multiple components in app
