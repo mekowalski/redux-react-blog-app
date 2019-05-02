@@ -19,10 +19,15 @@ export const fetchPosts = () => {
 // }
 
 //refactor to use memoize
-export const fetchUser = function(id) {
+//in theory, this should be ablt to call the action creator only 1 time
+//this is playing out with memoize, and retuning a function
+//not re-running the first function with id, but returning the same function that was returned the first time
+//since the function is returned, redux-thunk is going to invoke the function with dispatch and still make
+//the network request
+export const fetchUser = _.memoize(function(id) {
   return async function(dispatch) {
     const response = await jsonPlaceholder.get(`/users/${id}`)
 
     dispatch({ type: 'FETCH_USER', payload: response.data })
   }
-}
+})
