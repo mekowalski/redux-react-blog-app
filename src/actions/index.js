@@ -1,4 +1,5 @@
 //Action Creator
+import _ from 'lodash';
 import jsonPlaceholder from '../apis/jsonPlaceholder';
 
 export const fetchPosts = () => {
@@ -9,8 +10,17 @@ export const fetchPosts = () => {
   }
 }
 
-export const fetchUser = id => {
-  return async dispatch => {
+// export const fetchUser = id => {
+//   return async dispatch => {
+//     const response = await jsonPlaceholder.get(`/users/${id}`)
+//
+//     dispatch({ type: 'FETCH_USER', payload: response.data })
+//   }
+// }
+
+//refactor to use memoize
+export const fetchUser = function(id) {
+  return async function(dispatch) {
     const response = await jsonPlaceholder.get(`/users/${id}`)
 
     dispatch({ type: 'FETCH_USER', payload: response.data })

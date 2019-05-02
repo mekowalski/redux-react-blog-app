@@ -149,3 +149,4 @@
 
 - [] Install Lodash Library
   - make use of `memoize` function on one of the Action Creators
+  - import lodash, memoize `fetchUser`
