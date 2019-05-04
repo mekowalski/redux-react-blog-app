@@ -2,13 +2,11 @@
 import _ from 'lodash';
 import jsonPlaceholder from '../apis/jsonPlaceholder';
 
-//second create new action creator
-//challenging part: this will call fetchPosts & fetchUser multiple times
-//all the React code, the entire application will call this action creator alone
-//no longer will call other 2 action creators
+//need to dispatch the results of an action creator
+//this will then dispatch a function
 export const fetchPostsAndUsers = () => {
   return async dispatch => {
-
+    dispatch(fetchPosts())
   }
 }
 
