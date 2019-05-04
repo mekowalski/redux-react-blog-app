@@ -152,3 +152,6 @@
   - import lodash, memoize `fetchUser`
 1. try memoize of `fetchUser` action creator, outer function
 2. try memoize of `fetchUser` action creator, inner function
+
+- [] One time memoization
+  - Define function outside the Action Creator(`fetchUser`)
