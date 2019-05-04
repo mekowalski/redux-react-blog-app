@@ -2,11 +2,12 @@
 import _ from 'lodash';
 import jsonPlaceholder from '../apis/jsonPlaceholder';
 
-//need to dispatch the results of an action creator
-//this will then dispatch a function
+//third, get list of posts, make sure not to get list of post until action creator has completed the fetch
 export const fetchPostsAndUsers = () => {
   return async dispatch => {
-    dispatch(fetchPosts())
+    console.log('about to fetch posts!!!')
+    await dispatch(fetchPosts())
+    console.log('fetched posts!!!')
   }
 }
 
