@@ -125,7 +125,7 @@
   - instead of passing in a ton of data to component, and relying on component to find the user needed,
     should extract all that logic to `mapStateToProps` function
 
-- HOW THIS IS CONTRIBUTES TO REUSABILITY
+- HOW THIS CONTRIBUTES TO REUSABILITY
 - In some applications, some engineers define `mapStateToProps` and `connect` functions inside of a separate file
 - One file may have `mapStateToProps` and initial connect set up
 - A different file will have the component alone
@@ -161,7 +161,7 @@
 
 
 #### Alternate OverFetching Solution
-- Solve overfetching with new action creator of `fetchPostsAndUsers()`
+- [] Solve overfetching with new action creator of `fetchPostsAndUsers()`
 - This will execute the logic of:
   1. calling `fetchPosts`
   2. get a list of posts
