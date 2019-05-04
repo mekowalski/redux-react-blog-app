@@ -156,5 +156,5 @@
 - [x] One time memoization
   - Define function outside the Action Creator(`fetchUser`)
   - almost works
-  - `_fetchUser` needs to get id for retched user and needs a reference to dispatch()
+  - `_fetchUser` needs to get id for fetched user and needs a reference to dispatch()
   - get those 2 arguments in `_fetchUser`
