@@ -138,7 +138,7 @@
   - `ownProps` is reference to props that are about to be sent to the component
 
 
-- CURRENT ISSUE
+#### Current issue
 - Currently making a request for a single user 10 times in a row, same for all users
 - Making 100 separate requests to fetch just 10 users
 - Showing 1 instance of UserHeader for every single blog post fetched
@@ -158,3 +158,13 @@
   - almost works
   - `_fetchUser` needs to get id for fetched user and needs a reference to dispatch()
   - get those 2 arguments in `_fetchUser`
+
+
+#### Alternate OverFetching Solution
+- Solve overfetching with new action creator of `fetchPostsAndUsers()`
+- This will execute the logic of:
+  1. calling `fetchPosts`
+  2. get a list of posts
+  3. find all unique userId's from post lists
+  4. iterate over unique uderIds
+  5. and call `fetchUser` with each userId
