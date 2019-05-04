@@ -10,13 +10,15 @@ export const fetchPosts = () => {
   }
 }
 
+//pass the 2 arguments in _fetchUser
 export const fetchUser = id => {
   return async dispatch => {
-    _fetchUser()
+    _fetchUser(id, dispatch)
   }
 }
 
-const _fetchUser = _.memoize(() => {
+//and memoize function will recieve id and dispatch
+const _fetchUser = _.memoize((id, dispatch) => {
   const response = await jsonPlaceholder.get(`/users/${id}`)
 
   dispatch({ type: 'FETCH_USER', payload: response.data })
