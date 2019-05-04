@@ -11,9 +11,7 @@ export const fetchPosts = () => {
 }
 
 export const fetchUser = id => dispatch => {
-  return async dispatch => {
-    _fetchUser(id, dispatch)
-  }
+  _fetchUser(id, dispatch)
 }
 
 const _fetchUser = _.memoize(async (id, dispatch) => {
