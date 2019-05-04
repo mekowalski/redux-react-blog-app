@@ -12,9 +12,8 @@ export const fetchPosts = () => {
 
 export const fetchUser = id => {
   return async dispatch => {
-    const response = await jsonPlaceholder.get(`/users/${id}`)
-
-    dispatch({ type: 'FETCH_USER', payload: response.data })
+    //call memoize version in action creator
+    _fetchUser()
   }
 }
 
@@ -22,8 +21,8 @@ export const fetchUser = id => {
 //underscore indicates it's a private function
 //(so to speak & other engineers shouldn't attempt to call this function unless thet know what they're doing)
 //arrow function makes request and dispatched the action
-const _fetchUser = () => {
+const _fetchUser = _.memoize(() => {
   const response = await jsonPlaceholder.get(`/users/${id}`)
 
   dispatch({ type: 'FETCH_USER', payload: response.data })
-}
+})
