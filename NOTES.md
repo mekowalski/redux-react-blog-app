@@ -153,5 +153,8 @@
 1. try memoize of `fetchUser` action creator, outer function
 2. try memoize of `fetchUser` action creator, inner function
 
-- [] One time memoization
+- [x] One time memoization
   - Define function outside the Action Creator(`fetchUser`)
+  - almost works
+  - `_fetchUser` needs to get id for retched user and needs a reference to dispatch()
+  - get those 2 arguments in `_fetchUser`
