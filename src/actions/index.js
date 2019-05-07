@@ -3,10 +3,10 @@ import _ from 'lodash';
 import jsonPlaceholder from '../apis/jsonPlaceholder';
 
 export const fetchPostsAndUsers = () => {
-  return async dispatch => {
-    console.log('about to fetch posts!!!')
+  return async (dispatch, getState) => {
     await dispatch(fetchPosts())
-    console.log('fetched posts!!!')
+    // getState().posts
+    console.log(getState().posts)
   }
 }
 
