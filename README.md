@@ -13,3 +13,12 @@ Kowalski, are you there?
   - Could now return an Action Function
   - This gives better control of changing/getting information out of Redux Store
   - Any time an API requests is made, redux-thunk will be frequently used to make the requests
+
+- Created an Action Creator that called other Action Creators
+  - Made sure to still Dispatch the results of calling the other Action Creators
+
+- Reducers were created with 2 arguments
+  - First being the State that was defaulted & that it is whatever is returned from the Reducer the last time it ran
+  - Reducers are run over and over again
+  - Learned about frequently used/preferred syntax of `switch` statements within a Reducer
+  - Learned about returning a new array/object rather than mutating the original
