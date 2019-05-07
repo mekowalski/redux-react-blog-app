@@ -161,10 +161,13 @@
 
 
 #### Alternate OverFetching Solution
-- [] Solve overfetching with new action creator of `fetchPostsAndUsers()`
+- [x] Solve overfetching with new action creator of `fetchPostsAndUsers()`
 - This will execute the logic of:
   1. [x] calling `fetchPosts`
   2. [x] get a list of posts (use getState with thunk, giving access to all data in Store)
   3. [x] find all unique userId's from post lists
   4. [x] iterate over unique userIds
-  5. [] and call `fetchUser` with each userId
+  5. [x] and call `fetchUser` with each userId
+
+- UserHeader is still making duplicate requests, fetching its own data
+- Need to remove lifecycle, `fetchUser` action creator and from connect()
