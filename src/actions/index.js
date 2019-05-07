@@ -8,8 +8,6 @@ export const fetchPostsAndUsers = () => {
 
     const userIds = _.uniq(_.map(getState().posts, 'userId'))
     userIds.forEach(id => dispatch(fetchUser(id)))
-    //this time await keyword isn't used because i don't care about waiting for each user to be fetched
-    //just want to wait for the list of posts to be fetched
   }
 }
 

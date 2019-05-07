@@ -171,3 +171,5 @@
 
 - UserHeader is still making duplicate requests, fetching its own data
 - Need to remove lifecycle, `fetchUser` action creator and from connect()
+
+- Can still fetch a list of posts and individual user inside the application due to the action creators
