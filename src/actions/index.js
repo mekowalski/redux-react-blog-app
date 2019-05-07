@@ -6,11 +6,10 @@ export const fetchPostsAndUsers = () => {
   return async (dispatch, getState) => {
     await dispatch(fetchPosts())
 
-    //lodash version of map function and unique
-    //pull off just userId from post and find the unique user id
-    //uniq will return an array with just unique userId
     const userIds = _.uniq(_.map(getState().posts, 'userId'))
-    console.log(userIds)
+    userIds.forEach(id => dispatch(fetchUser(id)))
+    //this time await keyword isn't used because i don't care about waiting for each user to be fetched
+    //just want to wait for the list of posts to be fetched
   }
 }
 
