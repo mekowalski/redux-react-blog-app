@@ -164,7 +164,7 @@
 - [] Solve overfetching with new action creator of `fetchPostsAndUsers()`
 - This will execute the logic of:
   1. [x] calling `fetchPosts`
-  2. [] get a list of posts (use getState with thunk, giving access to all data in Store)
+  2. [x] get a list of posts (use getState with thunk, giving access to all data in Store)
   3. [] find all unique userId's from post lists
   4. [] iterate over unique uderIds
   5. [] and call `fetchUser` with each userId

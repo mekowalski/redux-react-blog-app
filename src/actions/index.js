@@ -5,8 +5,12 @@ import jsonPlaceholder from '../apis/jsonPlaceholder';
 export const fetchPostsAndUsers = () => {
   return async (dispatch, getState) => {
     await dispatch(fetchPosts())
-    // getState().posts
-    console.log(getState().posts)
+
+    //lodash version of map function and unique
+    //pull off just userId from post and find the unique user id
+    //uniq will return an array with just unique userId
+    const userIds = _.uniq(_.map(getState().posts, 'userId'))
+    console.log(userIds)
   }
 }
 
